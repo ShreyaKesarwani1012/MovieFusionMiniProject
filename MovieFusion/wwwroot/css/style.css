@@ -1,11 +1,18 @@
 ﻿body {
+    background-color:#100f0f
+   
+}
 
-
-
+.logo img{
+    width:300px;
+    position:relative;
+    left:0px;
+    height:100px;
 }
 .navbar-brand {
     color:wheat;
     font-size: 1.8em;
+    padding-right:34px;
 }
 
 .nav-bar ul {
@@ -13,7 +20,7 @@
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content:right;
 
 }
 
@@ -35,10 +42,41 @@
     }
 
 
+.search-container {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    max-width: 600px;
+}
 
+.search-input {
+    flex: 1;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    border: 1px solid black;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
 
+    .search-input:focus {
+        border-color: black;
+    }
+
+.search-button {
+    padding: 0.5em 1em;
+    font-size: 1em;
+    color: white;
+    background-color: black;
+    border: 1px solid #007bff;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+    .search-button:hover {
+        background-color: #0056b3;
+    }
 .background-video {
-    position: absolute;
+   position:absolute;
     top: 50%;
     left: 50%;
     width: 99%;
@@ -47,13 +85,86 @@
     transform: translate(-50%, -50%);
     z-index: -1;
 }
+
+.Container-1 {
+    height:fit-content;
+    width:fit-content;
+    justify-content:center;
+    align-content:center;
+}
+    .Container-1 a {
+        text-decoration: none;
+        position: relative;
+        float:right;
+       
+        font-size: 63px;
+        color: white;
+    }
+
+.Container-1 Button {
+    position: relative;
+    top: 430px;
+    align-items:center;
+    font-size: 23px;
+    padding: 14px;
+    color: white;
+    border: 3px solid white;
+    background: transparent;
+}
+.Container-1 Button:hover {
+
+        border-radius: 40%;
+        transition:0.3s ease-in ;
+ }
+
+.Container-2 {
+    position: relative;
+    top: 590px;
+    width: 100%;
+    height: fit-content;
+}
+
 .Container-2 h1{
 
-
-    top:640px;
+    color:white;
     text-align: center;
-
-    position:relative;
-    background-color: red;
+}
+.Container-2 img{
+   
+    height:300px;
 
 }
+.card {
+    padding-top:34px;
+    background-color: #100f0f ;
+    overflow:hidden;
+    border-spacing:34px;
+}
+
+
+
+.card-body h5
+{
+    font-size:45px;
+    color :white;
+}
+.card-body a {
+    font-size: 23px;
+    background-color:black;
+    border:none;
+    color: red;
+}
+    .card-body a:hover {
+        font-size: 30px;
+        background-color: red;
+        border: none;
+        color: black;
+        transition: 0.3s;
+    }
+
+.Container-2 img:hover {
+    border-radius: 20%;
+    transition: 0.3s;
+    box-shadow:1px 5px 25px white;
+}
+
