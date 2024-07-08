@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\css\Assests\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include="wwwroot\css\Assests\IntroVideo - Made with Clipchamp.mp4" />
   </ItemGroup>
 

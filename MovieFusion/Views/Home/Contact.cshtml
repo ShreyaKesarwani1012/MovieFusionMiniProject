@@ -1,27 +1,88 @@
-﻿@*
+﻿<link src="./css/Contact.css" rel="stylesheet"/>
+
+@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
-
-
-
 @{
     ViewData["Title"] = "Contact";
 }
 
-<h1>Contact Us</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .card {
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+            text-align: center;
+            width: 30%; /* Adjust width for responsiveness */
+        }
+        .card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        .card h3 {
+            margin-bottom: 10px;
+        }
+        .card p {
+            color: #666;
+        }
 
-<p>At Movie Fusion, we're always here to help. Whether you have a question about our services, need assistance with your account, or want to share your feedback, we're all ears. Our team is dedicated to providing you with the support you need to ensure the best movie-watching experience possible.</p>
+    </style>
+</head>
+<body>
 
-<h2>Get in Touch</h2>
-<p>Have a question or concern? Our customer service team is available to assist you. Reach out to us via email at support@moviefusion.com, and we'll get back to you as soon as possible.</p>
+<div class="card">
+    <img src="alice.jpg" alt="Alice Johnson">
+    <h3>Alice Johnson</h3>
+    <p>Customer Support Specialist</p>
+    <p>Contact: <a href="mailto:alice@example.com">alice@example.com</a></p>
+</div>
 
-<h2>Feedback & Suggestions</h2>
-<p>Your feedback is invaluable to us. If you have suggestions on how we can improve or compliments on what we're doing right, please let us know. We're committed to continuous improvement and value your input.</p>
+<div class="card">
+    <img src="bob.jpg" alt="Bob Smith">
+    <h3>Bob Smith</h3>
+    <p>Customer Support Specialist</p>
+    <p>Contact: <a href="mailto:bob@example.com">bob@example.com</a></p>
+</div>
 
-<h2>Press & Media</h2>
-<p>For press inquiries and media-related questions, please contact our public relations team at pr@moviefusion.com. We're happy to provide information and resources about Movie Fusion and our latest initiatives.</p>
+<div class="card">
+    <img src="emily.jpg" alt="Emily Davis">
+    <h3>Emily Davis</h3>
+    <p>Sales Representative</p>
+    <p>Contact: <a href="mailto:emily@example.com">emily@example.com</a></p>
+</div>
 
-<h2>Follow Us</h2>
-<p>Stay connected with Movie Fusion on social media for the latest news, updates, and exclusive offers. Follow us on Twitter, Facebook, and Instagram.</p>
+<div class="card">
+    <img src="john.jpg" alt="John Doe">
+    <h3>John Doe</h3>
+    <p>Sales Representative</p>
+    <p>Contact: <a href="mailto:john@example.com">john@example.com</a></p>
+</div>
 
-<p>We look forward to hearing from you!</p>
+<div class="card">
+    <img src="sarah.jpg" alt="Sarah Lee">
+    <h3>Sarah Lee</h3>
+    <p>Technical Support Specialist</p>
+    <p>Contact: <a href="mailto:sarah@example.com">sarah@example.com</a></p>
+</div>
+
+</body>
+</html>
