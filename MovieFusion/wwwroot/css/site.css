@@ -1,5 +1,6 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
+   
 }
 
 @media (min-width: 768px) {
@@ -25,8 +26,9 @@ body {
   
 }
 body {
-    font-family: "Margarine", sans-serif;
-    font-weight: 400;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
     font-style: normal;
     background: #8E0E00; /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00); /* Chrome 10-25, Safari 5.1-6 */

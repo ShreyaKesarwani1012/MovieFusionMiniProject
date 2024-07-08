@@ -13,8 +13,6 @@
 
     
     <div class="Container-1">
-
-       
         <video autoplay muted loop class="background-video">
             <source src="./css/Assests/IntroVideo - Made with Clipchamp.mp4">
         </video>
@@ -87,7 +85,7 @@
 
         <div class="Container-3">
 
-
+            <h1>Our Hot Deals</h1>
 
             <div class="container text-center">
                 <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
@@ -149,6 +147,38 @@
 
         </div>
 
+
+    </section>
+
+
+
+
+    <section>
+
+        <div class="Container-4">
+            <div class="container-41">
+                <h1> Query Form</h1>
+                <form id="queryForm" action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required pattern="[A-Za-z\s]+" title="Please enter your name using only letters and spaces.">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required pattern="^\d{10}$" title="Please enter a valid 10-digit phone number.">
+
+                    <label for="movie">Favorite Movie:</label>
+                    <input type="text" id="movie" name="movie" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+        </div>
 
     </section>
  
