@@ -1,5 +1,15 @@
+body {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    margin-bottom: 60px;
+    font-style: normal;
+    background: linear-gradient(to right, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
 html {
-  font-size: 14px;
+    font-size: 14px;
+   
 }
 
 @media (min-width: 768px) {
@@ -19,8 +29,10 @@ html {
   color:red;
 }
 
-body {
-
-  margin-bottom: 60px;
-  
+.logo img {
+    width: 300px;
+    position: relative;
+    left: 0px;
+    height: 100px;
 }
+
