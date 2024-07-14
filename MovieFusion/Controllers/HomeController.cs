@@ -18,6 +18,12 @@ namespace MovieFusion.Controllers
             return View();
         }
 
+        public IActionResult Logout()
+        {
+            HttpContext.Session.SetString("UserRole", "guest");
+            return RedirectToAction("Index", "Home");
+        }
+
         public IActionResult About()
         {
             return View();

@@ -7,6 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Views\MovieLists\Normal.cshtml" />
+    <Content Remove="Views\Users\ForUser.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\MovieLists\Normal.cshtml" />
+    <None Include="Views\Users\ForUser.cshtml" />
     <None Include="wwwroot\css\Assests\IntroVideo - Made with Clipchamp.mp4" />
   </ItemGroup>
 
@@ -19,6 +26,19 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Users\ForUser.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Views\MovieLists\Normal.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Users\ForUser.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\MovieLists\Normal.cshtml" />
   </ItemGroup>
 
 </Project>

@@ -58,7 +58,6 @@ public partial class MovieFusionContext : DbContext
                 .HasMaxLength(100)
                 .IsUnicode(false)
                 .HasColumnName("MName");
-            entity.Property(e => e.Mpic).HasColumnName("MPic");
         });
 
         modelBuilder.Entity<Order>(entity =>

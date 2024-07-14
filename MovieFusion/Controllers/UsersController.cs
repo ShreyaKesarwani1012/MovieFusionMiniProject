@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MovieFusion.Models;
+using Microsoft.AspNetCore.Http;
 
 namespace MovieFusion.Controllers
 {
@@ -16,6 +14,35 @@ namespace MovieFusion.Controllers
         public UsersController(MovieFusionContext context)
         {
             _context = context;
+        }
+
+        [HttpPost]
+        public IActionResult  Login(string email, string password)
+        {
+            var user = _context.Users.FirstOrDefault(u => u.Email == email && u.Password == password);
+
+            if (email=="Admin@gmail.com" && password == "Admin@123")
+            {
+                HttpContext.Session.SetString("UserName", "Admin");
+                HttpContext.Session.SetString("UserRole", "Admin");
+                return RedirectToAction("Index", "MovieLists");
+            }
+            else  if (user != null)
+                  {
+                HttpContext.Session.SetString("UserName", user.Name);
+                HttpContext.Session.SetString("UserRole", "User");
+                return RedirectToAction("ForUser", "MovieLists");
+                   }
+                  else
+                   {
+               
+                return RedirectToAction(nameof(Create));
+                   }
+        }
+
+        public async Task<IActionResult> ForUser()
+        {
+            return View(await _context.Users.ToListAsync());
         }
 
         // GET: Users
@@ -41,6 +68,9 @@ namespace MovieFusion.Controllers
 
             return View(user);
         }
+
+
+      
 
         // GET: Users/Create
         public IActionResult Create()

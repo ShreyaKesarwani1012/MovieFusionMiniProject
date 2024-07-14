@@ -24,6 +24,11 @@ namespace MovieFusion.Controllers
             return View(await _context.MovieLists.ToListAsync());
         }
 
+        public async Task<IActionResult> ForUser()
+        {
+            return View(await _context.MovieLists.ToListAsync());
+        }
+
         // GET: MovieLists/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -85,7 +90,7 @@ namespace MovieFusion.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("MId,Mname,Genre,Duration,Mpic")] MovieList movieList)
+        public async Task<IActionResult> Edit(int id, [Bind("MId,Mname,Genre,Duration")] MovieList movieList)
         {
             if (id != movieList.MId)
             {
@@ -152,5 +157,11 @@ namespace MovieFusion.Controllers
         {
             return _context.MovieLists.Any(e => e.MId == id);
         }
+        public IActionResult Normal()
+        {
+            return RedirectToAction("Normal", "MovieLists");
+        }
+
+
     }
 }
